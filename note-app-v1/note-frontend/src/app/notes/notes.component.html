@@ -1,0 +1,18 @@
+<div class="note-container" *ngIf="notes && notes.length > 0">
+  <div class="card-container" *ngFor="let note of notes"  (click)="openUpdateNoteDialog(note)">
+    <div class="card-title-container">
+      <div class="card-title">{{note.title}}</div>
+      <mat-icon inline class="pin-button">push_pin</mat-icon>
+    </div>
+    <div class="card-content-container">
+      {{note.content}}
+    </div>
+    <div class="card-footer">
+      <mat-icon inline>today</mat-icon>
+      {{note.createdAt | date: "dd/mm/YYYY"}}
+    </div>
+  </div>
+</div>
+<button mat-fab class="fab-button" color="primary" (click)="openCreateNoteDialog()">
+  <mat-icon>add</mat-icon>
+</button>

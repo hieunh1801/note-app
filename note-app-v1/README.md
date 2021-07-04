@@ -2,8 +2,8 @@
 
 ## Database
 
-```text
-- note
+```md
+- [x] note
     + id [pk]
     + title
     + content
@@ -12,13 +12,15 @@
 ```
 
 ## Backend
-
-```text
-- GET       /notes
-- GET       /notes/:id
-- POST      /notes
-- UPDATE    /notes/:id
-- DELETE    /notes/:id
+- [x] Swagger
+- [x] ModelWrapper
+- [!] ExeptionHandling
+```md
+- [x] GET       /notes
+- [x] GET       /notes/:id
+- [x] POST      /notes
+- [x] UPDATE    /notes/:id
+- [x] DELETE    /notes/:id
 ```
 
 ## Frontend

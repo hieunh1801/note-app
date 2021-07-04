@@ -1,0 +1,17 @@
+.note-dialog-container {
+  width: 100%;
+}
+.full-width {
+  width: 100%;
+}
+
+.note-dialog-action {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+}
+
+.hidden {
+  display: none;
+}
